@@ -84,6 +84,6 @@ public class Profesores {
                 ", asignatura='" + asignatura + '\'' +
                 ", edad=" + edad +
                 ", salario=" + salario +
-                '}';
+                '}'  + "\n";
     }
 }
