@@ -25,13 +25,13 @@ public class Applicattion {
             System.out.println("1 - PROFESOR");
             System.out.println("2 - ALUMNO");
             System.out.println("3 - PERSONAL");
-            System.out.println("4 - VER PROFESOR");
-            System.out.println("7 - SALIR");
+            System.out.println("4 - SALIR");
 
             int eleccion=sc.nextInt();
 
             switch (eleccion){
                 case 1:
+                    //Crear profesores
                     sc=new Scanner(System.in);
                     System.out.println("Nombre: ");
                     String nombre=sc.nextLine();
@@ -55,6 +55,7 @@ public class Applicattion {
                     }
                     break;
                 case 2:
+                    //Crear alumnos
                     sc=new Scanner(System.in);
                     System.out.println("Nombre: ");
                     String nombre2=sc.nextLine();
@@ -84,6 +85,7 @@ public class Applicattion {
                     }
                     break;
                 case 3:
+                    //Crear personal
                     sc=new Scanner(System.in);
                     System.out.println("Nombre: ");
                     String nombre3=sc.nextLine();
