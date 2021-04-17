@@ -4,6 +4,7 @@ import domain.Alumnos;
 import domain.Personal;
 import domain.Profesores;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Applicattion {
@@ -17,6 +18,11 @@ public class Applicattion {
 
         boolean salir=false;
 
+        //Colecciones donde voy a guardar los objetos
+        ArrayList<Profesores> profesores=new ArrayList<Profesores>();
+        ArrayList<Alumnos> alumnos=new ArrayList<Alumnos>();
+        ArrayList<Personal> personales=new ArrayList<Personal>();
+
 
         while (!salir){
             sc=new Scanner(System.in);
@@ -25,7 +31,10 @@ public class Applicattion {
             System.out.println("1 - PROFESOR");
             System.out.println("2 - ALUMNO");
             System.out.println("3 - PERSONAL");
-            System.out.println("4 - SALIR");
+            System.out.println("4 - MOSTRAR POFESORES");
+            System.out.println("5 - MOSTRAR ALUMNOS");
+            System.out.println("6 - MOSTRAR PERSONAL");
+            System.out.println("7 - SALIR");
 
             int eleccion=sc.nextInt();
 
@@ -47,12 +56,9 @@ public class Applicattion {
                     float salario=Float.parseFloat(salarioStr);
 
                     profesor=new Profesores(nombre, apellido, asignatura, edad, salario);
+                    //Añado a la coleccion
+                    profesores.add(profesor);
 
-                    System.out.println("¿Ver el profesor registrado?");
-                    String respuesta=sc.nextLine();
-                    if(respuesta.equalsIgnoreCase("si")){
-                        System.out.println(profesor.toString());
-                    }
                     break;
                 case 2:
                     //Crear alumnos
@@ -77,12 +83,9 @@ public class Applicattion {
                     float media=Float.parseFloat(mediaStr);
 
                     alumno=new Alumnos(nombre2, apellido2, repetidor, edad2, media);
+                    //Añado el objeto a la coleccion
+                    alumnos.add(alumno);
 
-                    System.out.println("¿Ver el alumno registrado?");
-                    String respuesta2=sc.nextLine();
-                    if(respuesta2.equalsIgnoreCase("si")){
-                        System.out.println(alumno.toString());
-                    }
                     break;
                 case 3:
                     //Crear personal
@@ -101,15 +104,24 @@ public class Applicattion {
                     float salario3=Float.parseFloat(salarioStr3);
 
                     personal=new Personal(nombre3, apellido3, oficio, edad3, salario3);
+                    //Añado a la  coleccion
+                    personales.add(personal);
 
-                    System.out.println("¿Ver el personal registrado?");
-                    String respuesta3=sc.nextLine();
-                    if(respuesta3.equalsIgnoreCase("si")){
-                        System.out.println(personal.toString());
-                    }
                     break;
 
                 case 4:
+                    System.out.println(profesores.toString());
+                    break;
+
+                case 5:
+                    System.out.println(alumnos.toString());
+                    break;
+
+                case 6:
+                    System.out.println(personales.toString());
+                    break;
+
+                case 7:
                     salir=true;
                     break;
             }
