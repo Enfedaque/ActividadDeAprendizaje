@@ -20,6 +20,7 @@ public class Profesores {
         this.salario = salario;
     }
 
+
     //GETTER AND SETTER
     public String getNombre() {
         return nombre;
