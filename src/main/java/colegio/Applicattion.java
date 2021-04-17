@@ -19,8 +19,11 @@ public class Applicattion {
         boolean salir=false;
 
         //Colecciones donde voy a guardar los objetos
+        //Guardo los profesores creados
         ArrayList<Profesores> profesores=new ArrayList<Profesores>();
+        //Guardo los alumnos creados
         ArrayList<Alumnos> alumnos=new ArrayList<Alumnos>();
+        //Guardo el personal creado
         ArrayList<Personal> personales=new ArrayList<Personal>();
 
 
@@ -111,14 +114,17 @@ public class Applicattion {
 
                 case 4:
                     System.out.println(profesores.toString());
+
                     break;
 
                 case 5:
                     System.out.println(alumnos.toString());
+
                     break;
 
                 case 6:
                     System.out.println(personales.toString());
+
                     break;
 
                 case 7:

@@ -82,6 +82,6 @@ public class Alumnos {
                 ", repetidor=" + repetidor +
                 ", edad=" + edad +
                 ", media=" + media +
-                '}';
+                '}' + "\n";
     }
 }

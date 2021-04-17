@@ -84,7 +84,7 @@ public class Personal {
                 ", oficio='" + oficio + '\'' +
                 ", edad=" + edad +
                 ", salario=" + salario +
-                '}';
+                '}' + "\n";
     }
 }
 
