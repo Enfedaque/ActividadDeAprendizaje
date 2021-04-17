@@ -4,6 +4,7 @@ import domain.Alumnos;
 import domain.Personal;
 import domain.Profesores;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Applicattion {
@@ -112,6 +113,8 @@ public class Applicattion {
                     break;
             }
         }
+
+
 
 
     }
