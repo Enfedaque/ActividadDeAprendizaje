@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class Profesores {
 
+    //Atributos
     public String nombre;
     public String apellido;
     public String asignatura;
@@ -74,7 +75,6 @@ public class Profesores {
     }
 
     //METODO TOSTRING
-
     @Override
     public String toString() {
         return "Profesor{" +
